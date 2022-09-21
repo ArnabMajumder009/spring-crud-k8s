@@ -16,7 +16,7 @@ pipeline {
                 
                 script{
                    // spring-mysql-CRUD Application deployment
-                   cpd.kubectl('apply -f spring.yaml.yaml')
+                   cpd.kubectl('apply -f spring.yaml')
                    cpd.kubectl('apply -f mysql-db.yaml')
                    cpd.kubectl('apply -f mysql-config.yaml')
                    cpd.kubectl('apply -f mysql-secretUpdate Jenkinsfile.yaml')
