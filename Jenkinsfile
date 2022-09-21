@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('scm') {
             steps {
-                git branch: 'main', url: 'https://github.com/ArnabMajumder009/springboot-crud-k8s.git'
+                git branch: 'main', url: 'https://github.com/ArnabMajumder009/spring-crud-k8s.git'
             }
         }
         
