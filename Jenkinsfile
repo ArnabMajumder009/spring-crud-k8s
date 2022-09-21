@@ -15,7 +15,11 @@ pipeline {
             steps {
                 
                 script{
+                    docker login 'registry-jpe1.r-local.net' -u 'Arnab_Majumder' -p 'SnjfhCdrQVm3FcPl4K4FuoQConXbGebl'
+                    docker pull registry-jpe1.r-local.net/cpd-support-my-first-ns/mysql:1.0
+                    
                    // spring-mysql-CRUD Application deployment
+                    
                    cpd.kubectl('apply -f spring.yaml')
                    cpd.kubectl('apply -f mysql-db.yaml')
                    cpd.kubectl('apply -f mysql-config.yaml')
