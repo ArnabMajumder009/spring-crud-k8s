@@ -16,10 +16,10 @@ pipeline {
                 
                 script{
                    // Apply deployment
-                   cpd.kubectl('apply -f app-deployment.yaml')
-                   cpd.kubectl('apply -f db-deployment.yaml')
-                   cpd.kubectl('apply -f mysql-configMap.yaml')
-                   cpd.kubectl('apply -f mysql-secrets.yaml')
+                   cpd.kubectl('apply -f spring.yaml.yaml')
+                   cpd.kubectl('apply -f mysql-db.yaml')
+                   cpd.kubectl('apply -f mysql-config.yaml')
+                   cpd.kubectl('apply -f mysql-secretUpdate Jenkinsfile.yaml')
                     
                    
                }
